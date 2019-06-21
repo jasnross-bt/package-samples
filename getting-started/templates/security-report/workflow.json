@@ -1,0 +1,92 @@
+{
+  "apiVersion": "v1",
+  "body": {
+    "id": "myForm",
+    "displayName": "Complex Form",
+    "description": "Very Complex Form",
+    "type": "form",
+    "components": [
+      {
+        "name": "header",
+        "type": "textInput",
+        "displayName": "Report Header",
+        "description": "Header of the security report",
+        "required": true,
+        "defaultValue": "Hello, User!",
+        "label": "Report Header"
+      },
+      {
+        "name": "body",
+        "type": "columns",
+        "displayName": "Report Body",
+        "description": "Details report",
+        "columns": [
+          {
+            "name": "firstColumn",
+            "components": [
+              {
+                "name": "selectPlan",
+                "type": "select",
+                "displayName": "Security plan",
+                "description": "Choosing a security plan to report",
+                "required": true,
+                "defaultSelected": "prem",
+                "label": "Selected Plan",
+                "options": [
+                  {
+                    "id": "std",
+                    "label": "Standard Plan",
+                    "value": {
+                      "price": 42,
+                      "currency": "USD",
+                      "sku": "D1_STD",
+                      "lts": false
+                    }
+                  },
+                  {
+                    "id": "prem",
+                    "label": "Premium Plan",
+                    "value": {
+                      "price": 420,
+                      "currency": "USD",
+                      "sku": "D2_PREM",
+                      "lts": true
+                    }
+                  },
+                  {
+                    "id": "promo",
+                    "label": "Promo Plan",
+                    "value": {
+                      "price": 0,
+                      "currency": "USD",
+                      "sku": "A0_PROMO",
+                      "lts": false,
+                      "contactInfo": {
+                        "email": "promo@bestsecurity.com"
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "secondColumn",
+            "components": [
+              {
+                "name": "reportBody",
+                "type": "textArea",
+                "displayName": "Report Body",
+                "description": "Contains security recommendations",
+                "required": false,
+                "label": "Report Body",
+                "placeholder": "Recommendation No. 1: Don't choose our competitor.",
+                "defaultValue": "Thank you for choosing us!"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

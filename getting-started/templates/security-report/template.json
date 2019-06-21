@@ -1,0 +1,7 @@
+{
+  "apiVersion": "v1",
+  "name": "security-report",
+  "displayName": "Security Report",
+  "description": "Template for generating a security report.",
+  "keywords": ["it", "automation"]
+}
