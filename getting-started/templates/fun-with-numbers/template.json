@@ -1,0 +1,11 @@
+{
+  "apiVersion": "v1",
+  "name": "fun-with-numbers",
+  "displayName": "Fun with Numbers",
+  "description": "Lets the customer pick a number and get interesting facts about it.",
+  "keywords": [
+    "number",
+    "information",
+    "email"
+  ]
+}

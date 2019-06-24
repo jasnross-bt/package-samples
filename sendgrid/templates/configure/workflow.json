@@ -1,0 +1,38 @@
+{
+  "apiVersion": "v1",
+  "body": {
+    "id": "root",
+    "description": "Sequence of steps.",
+    "type": "sequence",
+    "items": [
+      {
+        "id": "configurationForm",
+        "type": "form",
+        "displayName": "Configure SendGrid",
+        "description": "Asks user to provide configuration values.",
+        "components": [
+          {
+            "name": "apiKey",
+            "type": "textInput",
+            "displayName": "API Key",
+            "description": "API key used to submit messages via SendGrid.",
+            "required": true,
+            "defaultValue": "",
+            "label": "Please provide SendGrid API key:"
+          }
+        ]
+      },
+      {
+        "id": "saveConfiguration",
+        "type": "packageTask",
+        "displayName": "Save Package Configuration",
+        "description": "Saves SendGrid configuration as package settings.",
+        "package": "voleer/sendgrid@0.3.0",
+        "task": "save-package-configuration",
+        "inputs": {
+          "apiKey": "${configurationForm.outputs.apiKey}"
+        }
+      }
+    ]
+  }
+}

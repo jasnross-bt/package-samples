@@ -1,0 +1,86 @@
+{
+  "apiVersion": "v1",
+  "body": {
+    "id": "root",
+    "description": "Sequence of steps.",
+    "type": "sequence",
+    "items": [
+      {
+        "id": "form",
+        "type": "form",
+        "displayName": "Input Form",
+        "description": "Asks user to choose a number.",
+        "components": [
+          {
+            "name": "number",
+            "type": "textInput",
+            "displayName": "Number",
+            "description": "Number of date to get information about.",
+            "label": "Enter a number or a date in month/day format. You can also enter 'random' or 'today'.",
+            "required": true,
+            "defaultValue": "42"
+          },
+          {
+            "name": "typeSelect",
+            "type": "select",
+            "displayName": "Type",
+            "description": "Type of information to retrieve.",
+            "label": "[Not Used] Select the type of information to get.",
+            "required": false,
+            "defaultSelected": "trivia",
+            "options": [
+              { "id": "trivia", "label": "Trivia", "value": "trivia" },
+              { "id": "math", "label": "Math", "value": "math" },
+              { "id": "date", "label": "Date", "value": "date" },
+              { "id": "year", "label": "Year", "value": "year" }
+            ]
+          },
+          {
+            "name": "type",
+            "type": "textInput",
+            "displayName": "Type",
+            "description": "Enter the type of information to retrieve.",
+            "label": "Type of information to get. Possible values: 'trivia', 'math', 'date', 'year'.",
+            "required": false,
+            "defaultValue": "trivia"
+          },
+          {
+            "name": "email",
+            "type": "textInput",
+            "displayName": "Email Address",
+            "description": "The email address to send information to.",
+            "label": "Email address where to send information.",
+            "required": true,
+            "defaultValue": ""
+          }
+        ]
+      },
+      {
+        "id": "getfact",
+        "type": "packageTask",
+        "displayName": "Get Information",
+        "description": "Gets information about selected value.",
+        "package": "voleer/getting-started@0.2.1",
+        "task": "get-number-fact",
+        "inputs": {
+          "number": "${form.outputs.number}",
+          "type": "${form.outputs.type}"
+        }
+      },
+      {
+        "id": "sendEmail",
+        "type": "packageTask",
+        "displayName": "Send Email",
+        "description": "Sends email to the user.",
+        "package": "voleer/sendgrid@0.3.0",
+        "task": "send-email",
+        "inputs": {
+          "fromAddress": "voleer@voleer.dev",
+          "toAddress": "${form.outputs.email}",
+          "subject": "Information about ${form.outputs.number}",
+          "body": "Hello, <b>Voleer Customer</b>!<br><br>This is what I found about <b>${form.outputs.number}</b>:<br><br>${getfact.outputs.Result}"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "apiVersion": "v1",
+  "name": "configure",
+  "displayName": "Configure SendGrid Package",
+  "description": "Stores package configuration.",
+  "keywords": [
+    "configuration",
+    "settings"
+  ]
+}

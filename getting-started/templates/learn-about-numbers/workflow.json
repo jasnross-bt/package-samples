@@ -34,8 +34,8 @@
       {
         "id": "getfact",
         "type": "packageTask",
-        "displayName": "Echo",
-        "description": "Call echo task.",
+        "displayName": "Get Information",
+        "description": "Gets information about specified input value.",
         "package": "voleer/getting-started@0.2.1",
         "task": "get-number-fact",
         "inputs": {
@@ -46,9 +46,9 @@
       {
         "id": "sendEmail",
         "type": "packageTask",
-        "displayName": "Send email",
-        "description": "Send email to the user.",
-        "package": "voleer/sendgrid@0.2.1",
+        "displayName": "Send Email",
+        "description": "Sends email to the customer.",
+        "package": "voleer/sendgrid@0.3.0",
         "task": "send-email",
         "inputs": {
           "apiKey": "${workflow.inputs.sendGridApiKey}",

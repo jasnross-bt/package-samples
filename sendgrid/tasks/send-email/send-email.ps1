@@ -9,7 +9,16 @@ param (
 
 # Logging
 Write-Information "Submitting email from='$FromAddress' to='$ToAddress' subject='$Subject'."
+
+# If API key is not passed as input parameter, use the value in the package configuration
+if (!$ApiKey) {
+    $ApiKey = $context.GetPackageText("apiKey.txt")
+}
 Write-Debug "apiKey='$ApiKey'."
+if (!$ApiKey) {
+    Write-Error "SendGrid API key is missing. It must be either provided to the task explicitly or stored in the sendgrid package configuration."
+    exit
+}
 
 # Invoke SendGrid API
 $headers = @{

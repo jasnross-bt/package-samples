@@ -1,0 +1,13 @@
+{
+  "apiVersion": "v1",
+  "displayName": "Save Package Configuration",
+  "description": "Saves configuration specific to this package.",
+  "inputs": [
+    {
+      "name": "apiKey",
+      "displayName": "SendGrid API Key",
+      "description": "API key used to submit messages via SendGrid.",
+      "required": true
+    }
+  ]
+}

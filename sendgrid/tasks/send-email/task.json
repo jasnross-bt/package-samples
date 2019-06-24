@@ -7,7 +7,7 @@
       "name": "apiKey",
       "displayName": "SendGrid API Key",
       "description": "SendGrid API key used to submit email for delivery.",
-      "required": true
+      "required": false
     },
     {
       "name": "fromAddress",

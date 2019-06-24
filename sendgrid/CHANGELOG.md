@@ -6,6 +6,14 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## [0.3.0] - 2019-06-21
+### Added
+- Task `save-package-configuration` to store SendGrid API key in package configuration settings.
+- Template `configure` lets users configure the package.
+
+### Changed
+- Task `send-email` uses API key from package configuration, if not explicitly specified. Parameter `apiKey` is now optional.
+
 ## [0.2.1] - 2019-06-13
 ### Changed
 - Task `send-mail`: improve logging and error handling.
