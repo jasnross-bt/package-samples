@@ -16,6 +16,49 @@
         "label": "Report Header"
       },
       {
+        "name": "selectPlan",
+        "type": "select",
+        "displayName": "Security plan",
+        "description": "Choosing a security plan to report",
+        "required": true,
+        "label": "Selected Plan",
+        "options": [
+          {
+            "id": "std",
+            "label": "Standard Plan",
+            "value": {
+              "price": 42,
+              "currency": "USD",
+              "sku": "D1_STD",
+              "lts": false
+            }
+          },
+          {
+            "id": "prem",
+            "label": "Premium Plan",
+            "value": {
+              "price": 420,
+              "currency": "USD",
+              "sku": "D2_PREM",
+              "lts": true
+            }
+          },
+          {
+            "id": "promo",
+            "label": "Promo Plan",
+            "value": {
+              "price": 0,
+              "currency": "USD",
+              "sku": "A0_PROMO",
+              "lts": false,
+              "contactInfo": {
+                "email": "promo@bestsecurity.com"
+              }
+            }
+          }
+        ]
+      },
+      {
         "name": "body",
         "type": "columns",
         "displayName": "Report Body",
