@@ -16,7 +16,7 @@
         "label": "Report Header"
       },
       {
-        "name": "selectPlan",
+        "name": "selectPlanNoDefault",
         "type": "select",
         "displayName": "Security plan",
         "description": "Choosing a security plan to report",
