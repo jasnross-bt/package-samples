@@ -27,12 +27,12 @@
     }
   },
   "body": {
-    "id": "root",
+    "name": "root",
     "description": "Sequence of steps.",
     "type": "sequence",
     "items": [
       {
-        "id": "getfact",
+        "name": "getfact",
         "type": "packageTask",
         "displayName": "Get Information",
         "description": "Gets information about specified input value.",
@@ -44,7 +44,7 @@
         }
       },
       {
-        "id": "sendEmail",
+        "name": "sendEmail",
         "type": "packageTask",
         "displayName": "Send Email",
         "description": "Sends email to the customer.",

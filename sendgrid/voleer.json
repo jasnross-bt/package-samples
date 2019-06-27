@@ -3,7 +3,7 @@
   "name": "sendgrid",
   "displayName": "Send email via SendGrid",
   "description": "Submits email for delivery via SendGrid.",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "publisher": "voleer",
   "keywords": [
     "communication",

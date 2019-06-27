@@ -2,12 +2,12 @@
   "apiVersion": "v1",
   "inputs": {},
   "body": {
-    "id": "root",
+    "name": "root",
     "description": "Sequence of steps.",
     "type": "sequence",
     "items": [
       {
-        "id": "getSettings",
+        "name": "getSettings",
         "type": "packageTask",
         "displayName": "Get Package Settings",
         "description": "Retrieves package settings.",
@@ -15,7 +15,7 @@
         "task": "get-package-settings"
       },
       {
-        "id": "showSettings",
+        "name": "showSettings",
         "type": "packageTask",
         "displayName": "Show Settings",
         "description": "Displays package settings.",

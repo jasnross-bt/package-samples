@@ -16,12 +16,12 @@
     }
   },
   "body": {
-    "id": "root",
+    "name": "root",
     "description": "Sequence of steps.",
     "type": "sequence",
     "items": [
       {
-        "id": "echo",
+        "name": "echo",
         "type": "packageTask",
         "displayName": "Echo",
         "description": "Call echo task.",
@@ -32,7 +32,7 @@
         }
       },
       {
-        "id": "sendEmail",
+        "name": "sendEmail",
         "type": "packageTask",
         "displayName": "Send email",
         "description": "Send email to the user.",

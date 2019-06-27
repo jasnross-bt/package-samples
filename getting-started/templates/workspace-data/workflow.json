@@ -2,12 +2,12 @@
   "apiVersion": "v1",
   "inputs": {},
   "body": {
-    "id": "root",
+    "name": "root",
     "description": "Sequence of steps.",
     "type": "sequence",
     "items": [
       {
-        "id": "testData",
+        "name": "testData",
         "type": "packageTask",
         "displayName": "Test Workspace Data",
         "description": "Uses data exchange methods.",
@@ -15,7 +15,7 @@
         "task": "test-workspace-data"
       },
       {
-        "id": "showResults",
+        "name": "showResults",
         "type": "packageTask",
         "displayName": "Show Results",
         "description": "Displays results from testData task.",

@@ -1,12 +1,12 @@
 {
   "apiVersion": "v1",
   "body": {
-    "id": "root",
+    "name": "root",
     "description": "Sequence of steps.",
     "type": "sequence",
     "items": [
       {
-        "id": "configurationForm",
+        "name": "configurationForm",
         "type": "form",
         "displayName": "Configure SendGrid",
         "description": "Asks user to provide configuration values.",
@@ -23,7 +23,7 @@
         ]
       },
       {
-        "id": "saveConfiguration",
+        "name": "saveConfiguration",
         "type": "packageTask",
         "displayName": "Save Package Configuration",
         "description": "Saves SendGrid configuration as package settings.",

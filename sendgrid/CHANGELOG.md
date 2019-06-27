@@ -6,6 +6,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## [0.3.1] - 2019-06-26
+### Changed
+- Switch to use `name` attribute to identify workflow steps.
+
 ## [0.3.0] - 2019-06-21
 ### Added
 - Task `save-package-configuration` to store SendGrid API key in package configuration settings.

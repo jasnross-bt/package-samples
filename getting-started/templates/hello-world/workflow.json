@@ -1,7 +1,7 @@
 {
   "apiVersion": "v1",
   "body": {
-    "id": "echo",
+    "name": "echo",
     "description": "Call echo task.",
     "type": "packageTask",
     "displayName": "Echo",

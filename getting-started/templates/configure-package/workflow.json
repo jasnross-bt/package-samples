@@ -13,12 +13,12 @@
     }
   },
   "body": {
-    "id": "root",
+    "name": "root",
     "description": "Sequence of steps.",
     "type": "sequence",
     "items": [
       {
-        "id": "saveSettings",
+        "name": "saveSettings",
         "type": "packageTask",
         "displayName": "Save Package Settings",
         "description": "Saves workflow inputs as package settings.",

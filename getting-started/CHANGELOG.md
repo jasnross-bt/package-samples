@@ -6,6 +6,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## [0.2.3] - 2019-06-26
+### Changed
+- Switch to use `name` attribute to identify workflow steps.
+
 ## [0.2.2] - 2019-06-24
 ### Added
 - Template `fun-with-numbers` - an example of using Voleer form to request inputs.
