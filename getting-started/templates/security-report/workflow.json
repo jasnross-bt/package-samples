@@ -16,6 +16,19 @@
         "label": "Report Header"
       },
       {
+        "name": "instructions",
+        "type": "paragraph",
+        "description": "Instructions for something",
+        "content": "# Instructions\n\nDo some stuff and things\n\n## Sub-heading\n\nMore stuff and things"
+      },
+      {
+        "name": "coolLink",
+        "type": "link",
+        "label": "Click Me",
+        "description": "Link out to some other URL",
+        "href": "https://register.voleer.dev"
+      },
+      {
         "name": "selectPlanNoDefault",
         "type": "select",
         "displayName": "Security plan",
