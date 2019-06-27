@@ -1,7 +1,7 @@
 {
   "apiVersion": "v1",
   "body": {
-    "id": "myForm",
+    "name": "myForm",
     "displayName": "Complex Form",
     "description": "Very Complex Form",
     "type": "form",
