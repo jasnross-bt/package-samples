@@ -12,6 +12,12 @@
         "description": "Asks user to choose a number.",
         "components": [
           {
+            "name": "instructions",
+            "type": "paragraph",
+            "description": "Instructions for the user.",
+            "content": "# Fun with Numbers\n\nLearn interesting facts about numbers and dates.\n\nVoleer will use [Numbers API](http://numbersapi.com) to get the information and [SendGrid](https://sendgrid.com/) API to deliver it via email."
+          },
+          {
             "name": "number",
             "type": "textInput",
             "displayName": "Number",
@@ -21,11 +27,11 @@
             "defaultValue": "42"
           },
           {
-            "name": "typeSelect",
+            "name": "type",
             "type": "select",
             "displayName": "Type",
             "description": "Type of information to retrieve.",
-            "label": "[Not Used] Select the type of information to get.",
+            "label": "Select the type of information to get.",
             "required": false,
             "defaultSelected": "trivia",
             "options": [
@@ -34,15 +40,6 @@
               { "id": "date", "label": "Date", "value": "date" },
               { "id": "year", "label": "Year", "value": "year" }
             ]
-          },
-          {
-            "name": "type",
-            "type": "textInput",
-            "displayName": "Type",
-            "description": "Enter the type of information to retrieve.",
-            "label": "Type of information to get. Possible values: 'trivia', 'math', 'date', 'year'.",
-            "required": false,
-            "defaultValue": "trivia"
           },
           {
             "name": "email",
@@ -80,6 +77,28 @@
           "subject": "Information about ${form.outputs.number}",
           "body": "Hello, <b>Voleer Customer</b>!<br><br>This is what I found about <b>${form.outputs.number}</b>:<br><br>${getfact.outputs.Result}"
         }
+      },
+      {
+        "name": "summaryForm",
+        "type": "form",
+        "displayName": "Summary",
+        "submitLabel": "OK",
+        "description": "Displays information to the user.",
+        "components": [
+          {
+            "name": "summary",
+            "type": "paragraph",
+            "description": "Information to be displayed.",
+            "content": "# Fun with Numbers\n\nThis is what I found about **${form.outputs.number}**:\n\n> ${getfact.outputs.Result}"
+          },
+          {
+            "name": "apiLink",
+            "type": "link",
+            "label": "Click here to get more information",
+            "description": "Link to get more information about selected value",
+            "href": "http://numbersapi.com/#${form.outputs.number}"
+          }
+        ]
       }
     ]
   }

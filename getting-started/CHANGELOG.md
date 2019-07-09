@@ -6,6 +6,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## [0.2.4] - 2019-06-28
+### Changed
+- Updated template `fun-with-numbers` to use paragraph and link components.
+
 ## [0.2.3] - 2019-06-26
 ### Changed
 - Switch to use `name` attribute to identify workflow steps.
