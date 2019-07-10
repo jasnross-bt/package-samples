@@ -29,6 +29,14 @@
         "href": "https://register.voleer.dev"
       },
       {
+        "name": "password",
+        "type": "textInput",
+        "description": "Password for something",
+        "label": "Password",
+        "required": true,
+        "mask": true
+      },
+      {
         "name": "selectPlanNoDefault",
         "type": "select",
         "displayName": "Security plan",
