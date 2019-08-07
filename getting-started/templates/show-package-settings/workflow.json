@@ -11,7 +11,7 @@
         "type": "packageTask",
         "displayName": "Get Package Settings",
         "description": "Retrieves package settings.",
-        "package": "voleer/getting-started@0.2.1",
+        "package": "voleer/getting-started@0.2.4",
         "task": "get-package-settings"
       },
       {
@@ -19,7 +19,7 @@
         "type": "packageTask",
         "displayName": "Show Settings",
         "description": "Displays package settings.",
-        "package": "voleer/getting-started@0.2.1",
+        "package": "voleer/getting-started@0.2.4",
         "task": "echo",
         "inputs": {
           "message": "Success: ${getSettings.outputs.ok}; data: ${getSettings.outputs.settings.CliXml}"

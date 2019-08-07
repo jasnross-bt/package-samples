@@ -27,7 +27,7 @@
         "type": "packageTask",
         "displayName": "Save Package Configuration",
         "description": "Saves SendGrid configuration as package settings.",
-        "package": "voleer/sendgrid@0.3.0",
+        "package": "voleer/sendgrid@0.3.1",
         "task": "save-package-configuration",
         "inputs": {
           "apiKey": "${configurationForm.outputs.apiKey}"

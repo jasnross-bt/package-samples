@@ -6,6 +6,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [Unreleased]
 
+## [0.2.5] - 2019-07-29
+### Changed
+- Updated template `fun-with-numbers` to use placeholder for email address.
+
 ## [0.2.4] - 2019-06-28
 ### Changed
 - Updated template `fun-with-numbers` to use paragraph and link components.

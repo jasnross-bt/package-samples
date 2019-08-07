@@ -25,7 +25,7 @@
         "type": "packageTask",
         "displayName": "Echo",
         "description": "Call echo task.",
-        "package": "voleer/getting-started@0.2.1",
+        "package": "voleer/getting-started@0.2.4",
         "task": "echo",
         "inputs": {
           "message": "Hello, ${workflow.inputs.name}!"
@@ -36,7 +36,7 @@
         "type": "packageTask",
         "displayName": "Send email",
         "description": "Send email to the user.",
-        "package": "voleer/sendgrid@0.2.1",
+        "package": "voleer/sendgrid@0.3.1",
         "task": "send-email",
         "inputs": {
           "apiKey": "${workflow.inputs.sendGridApiKey}",

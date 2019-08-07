@@ -11,7 +11,7 @@
         "type": "packageTask",
         "displayName": "Test Workspace Data",
         "description": "Uses data exchange methods.",
-        "package": "voleer/getting-started@0.2.1",
+        "package": "voleer/getting-started@0.2.4",
         "task": "test-workspace-data"
       },
       {
@@ -19,7 +19,7 @@
         "type": "packageTask",
         "displayName": "Show Results",
         "description": "Displays results from testData task.",
-        "package": "voleer/getting-started@0.2.1",
+        "package": "voleer/getting-started@0.2.4",
         "task": "echo",
         "inputs": {
           "message": "Success: ${testData.outputs.ok}."
