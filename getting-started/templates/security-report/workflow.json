@@ -29,6 +29,13 @@
         "href": "https://register.voleer.dev"
       },
       {
+        "name": "notRequired",
+        "type": "textInput",
+        "description": "This is not required",
+        "label": "Not Required",
+        "required": false
+      },
+      {
         "name": "password",
         "type": "textInput",
         "description": "Password for something",
