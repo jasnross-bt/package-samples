@@ -36,7 +36,7 @@
         "type": "packageTask",
         "displayName": "Get Information",
         "description": "Gets information about specified input value.",
-        "package": "voleer/getting-started@0.3.0",
+        "package": "voleer/getting-started@1.2.3",
         "task": "get-number-fact",
         "inputs": {
           "number": "${workflow.inputs.number}",
