@@ -5,7 +5,7 @@
     "description": "Call echo task.",
     "type": "packageTask",
     "displayName": "Echo",
-    "package": "voleer/getting-started@0.2.6",
+    "package": "voleer/getting-started@0.3.0",
     "task": "echo",
     "inputs": {
       "message": "Hello, World!"

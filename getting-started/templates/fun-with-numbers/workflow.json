@@ -58,7 +58,7 @@
         "type": "packageTask",
         "displayName": "Get Information",
         "description": "Gets information about selected value.",
-        "package": "voleer/getting-started@0.2.6",
+        "package": "voleer/getting-started@0.3.0",
         "task": "get-number-fact",
         "inputs": {
           "number": "${form.outputs.number}",
