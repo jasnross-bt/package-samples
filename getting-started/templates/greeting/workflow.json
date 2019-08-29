@@ -25,7 +25,7 @@
         "type": "packageTask",
         "displayName": "Echo",
         "description": "Call echo task.",
-        "package": "voleer/getting-started@0.2.5",
+        "package": "voleer/getting-started@0.2.6",
         "task": "echo",
         "inputs": {
           "message": "Hello, ${workflow.inputs.name}!"
